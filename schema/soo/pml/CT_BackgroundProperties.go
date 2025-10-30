@@ -56,7 +56,7 @@ func (m *CT_BackgroundProperties) MarshalXML(e *xml.Encoder, start xml.StartElem
 		e.EncodeElement(m.GradFill, segradFill)
 	}
 	if m.BlipFill != nil {
-		seblipFill := xml.StartElement{Name: xml.Name{Local: "p:blipFill"}}
+		seblipFill := xml.StartElement{Name: xml.Name{Local: "a:blipFill"}}
 		e.EncodeElement(m.BlipFill, seblipFill)
 	}
 	if m.PattFill != nil {
